@@ -12,6 +12,8 @@ public class PurchaseOrderRepo {
     @Autowired
     private JdbcTemplate template;
 
+    // CREATE 
+    // insert into the table if sucessful return true
     public boolean insertPO(Order ord){
         return template.update(SQL_INSERT_PO_TABLE, 
                 ord.getOrderId(),

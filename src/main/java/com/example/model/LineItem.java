@@ -1,7 +1,7 @@
 package com.example.model;
 
 import java.math.BigDecimal;
-
+// 2. create order detail table (child)
 public class LineItem {
     private Integer itemId;
     private String product;

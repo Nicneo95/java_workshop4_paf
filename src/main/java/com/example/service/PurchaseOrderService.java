@@ -23,6 +23,7 @@ public class PurchaseOrderService {
 
     @Transactional(rollbackFor = OrderException.class)
     public OrderResult createPurchaseOrder(Order ord) throws OrderException{
+        // order will generate a random id
         String orderId= UUID.randomUUID().toString()
             .substring(0, 8);
         ord.setOrderId(orderId);

@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
-
+// 1. create the order table (parent)
 public class Order {
     private String orderId;
     private String notes;
@@ -12,6 +12,7 @@ public class Order {
     private String customerName;
     private String shippingAddress;
     private BigDecimal tax;
+    // create a list to add the item to the list
     private List<LineItem> lineItems = new LinkedList<LineItem>();
     
     public String getOrderId() {
